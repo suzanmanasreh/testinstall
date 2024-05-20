@@ -272,6 +272,10 @@ def options_for_mpich_only(mpich_only_arch):
     options.append("--FOPTFLAGS=-g -O3 -march=native")
     options.append("--with-blaslapack-dir=" + MKL_DIR)
     options.append("--with-mpiexec=srun")
+    options.append("--with-shared=0")
+    options.append("--with-x11=0")
+    options.append("--with-x=0")
+    options.append("--with-windows-graphics=0")
     # options.append('PETSC_ARCH=' + mpich_only_arch)
     # options.append('PETSC_DIR=' + os.getcwd())
     return options
