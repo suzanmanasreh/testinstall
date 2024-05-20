@@ -263,7 +263,7 @@ def options_for_mpich_only(mpich_only_arch):
 
     options = []
     options.append('--with-cc=mpicc')
-    options.append('--with-cxx=0')
+    # options.append('--with-cxx=0')
     options.append('--with-fc=mpif90')
     options.append('--with-debugging=0')
     options.append("--COPTFLAGS=-g -O3 -march=native")
@@ -272,7 +272,7 @@ def options_for_mpich_only(mpich_only_arch):
     options.append("--FOPTFLAGS=-g -O3 -march=native")
     options.append("--with-blaslapack-dir=" + MKL_DIR)
     options.append("--with-mpiexec=srun")
-    options.append("--with-shared=0")
+    options.append("--with-shared-libraries=0")
     options.append("--with-x11=0")
     options.append("--with-x=0")
     options.append("--with-windows-graphics=0")
