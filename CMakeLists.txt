@@ -16,6 +16,7 @@ include(CMakePrintHelpers)
 cmake_minimum_required(VERSION 3.1.0)
 
 set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
+set(BLA_VENDOR Intel10_64lp)
 
 message("before petsc pkg config")
 
@@ -41,9 +42,10 @@ if (FORTRAN_COMPILER)
   message(${FORTRAN_COMPILER})
   message("123434324")
   SET(CMAKE_Fortran_COMPILER ${FORTRAN_COMPILER})
-  enable_language(Fortran)
   # set(CMAKE_Fortran_FLAGS "${CMAKE_Fortran_FLAGS} -I${PETSC_DIR}/include -I${PETSC_DIR}/${PETSC_ARCH}/include")
-  add_compile_options(-ffree-form -cpp)
+  add_compile_options(-ffree-line-length-none)
+  add_link_options(-ldl)
+  enable_language(Fortran)
 
   # SET(CMAKE_Fortran_LINK_EXECUTABLE "${CMAKE_Fortran_LINK_EXECUTABLE} -ldl")
 endif (FORTRAN_COMPILER)
@@ -54,5 +56,16 @@ project(ex1f)
 add_executable(ex1f ex1f.F90)
 
 find_package(PkgConfig REQUIRED)
+find_package(LAPACK REQUIRED)
+# find_package(LAPACK95 REQUIRED)
 pkg_search_module(PETSC REQUIRED IMPORTED_TARGET PETSc)
+
+target_link_libraries(ex1f LAPACK::LAPACK)
+
 target_link_libraries(ex1f PkgConfig::PETSC)
+if (LAPACK_FOUND)
+  message("lapack found")
+endif(LAPACK_FOUND)
+
+# target_link_options(ex1f PRIVATE LAPACK::LAPACK)
+# target_link_libraries(ex1f PkgConfig::PETSC ${CMAKE_DL_LIBS})
