@@ -2,3 +2,4 @@ packages/
 build/
 echo.py
 see.txt
+/.vscode
