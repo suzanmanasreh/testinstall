@@ -43,9 +43,10 @@ if (FORTRAN_COMPILER)
   message("123434324")
   SET(CMAKE_Fortran_COMPILER ${FORTRAN_COMPILER})
   # set(CMAKE_Fortran_FLAGS "${CMAKE_Fortran_FLAGS} -I${PETSC_DIR}/include -I${PETSC_DIR}/${PETSC_ARCH}/include")
-  add_compile_options(-ffree-line-length-none)
-  add_link_options(-ldl)
-  enable_language(Fortran)
+  # don't have to specify O3
+  add_compile_options(-ffree-line-length-none -fallow-argument-mismatch -freal-4-real-8 -O3)
+  add_link_options(-ldl -lstdc++ -Wl,--copy-dt-needed-entries)
+  enable_language(Fortran C CXX)
 
   # SET(CMAKE_Fortran_LINK_EXECUTABLE "${CMAKE_Fortran_LINK_EXECUTABLE} -ldl")
 endif (FORTRAN_COMPILER)
@@ -53,7 +54,7 @@ endif (FORTRAN_COMPILER)
 #  tells CMake to build the application ex1 from the source file ex1.c
 #  this must appear AFTER the compilers are set
 project(ex1f)
-add_executable(ex1f ex1f.F90)
+add_executable(ex1f ex4f.F90)
 
 find_package(PkgConfig REQUIRED)
 find_package(LAPACK REQUIRED)
@@ -63,6 +64,9 @@ pkg_search_module(PETSC REQUIRED IMPORTED_TARGET PETSc)
 target_link_libraries(ex1f LAPACK::LAPACK)
 
 target_link_libraries(ex1f PkgConfig::PETSC)
+if (PETSC_FOUND)
+  message("PETSc found")
+endif(PETSC_FOUND)
 if (LAPACK_FOUND)
   message("lapack found")
 endif(LAPACK_FOUND)
