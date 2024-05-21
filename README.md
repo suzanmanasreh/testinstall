@@ -14,4 +14,4 @@ export PETSC_DIR=<PETSC_DIR> PETSC_ARCH=<PETSC_ARCH>
 1. `bash test.sh`
 2. `cd build`
 3. `make`
-4. `./ex19f` or `./ex1f` or `./ex19` depending on what file is being built in `CMakeLists.txt`. most files from `./examples` folder give compiler errors except for `ex19f.F90`
+4. `./ex19f` or `./ex1f` or `./ex19` depending on what file is being built in `CMakeLists.txt`. most files from `./examples` folder give compiler errors except for `ex19.F90`
