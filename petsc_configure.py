@@ -264,7 +264,7 @@ def options_for_mpich_only(mpich_only_arch):
     options = []
     options.append('--with-cc=mpicc')
     # removing --with-cxx=0 flag causes error during config
-    options.append('--with-cxx=0')
+    options.append('--with-cxx=mpicxx')
     options.append('--with-fc=mpif90')
     options.append('--with-debugging=0')
     options.append("--COPTFLAGS=-g -O3 -march=native")
