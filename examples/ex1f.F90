@@ -155,7 +155,7 @@ program main
     PetscCallA(PetscViewerDestroy(viewer, ierr))
 #endif
     PetscCallA(PetscFinalize(ierr))
-end
+end program main
 !
 ! ------------------------------------------------------------------------
 !
@@ -199,7 +199,7 @@ subroutine FormFunction(snes, x, f, dummy, ierr)
     PetscCall(VecRestoreArrayReadF90(x, lx_v, ierr))
     PetscCall(VecRestoreArrayF90(f, lf_v, ierr))
 
-end
+end subroutine FormFunction
 
 ! ---------------------------------------------------------------------
 !
@@ -262,7 +262,7 @@ subroutine FormJacobian(snes, X, jac, B, dummy, ierr)
         PetscCall(MatAssemblyEnd(jac, MAT_FINAL_ASSEMBLY, ierr))
     end if
 
-end
+end subroutine FormJacobian
 
 subroutine MyLineSearch(linesearch, lctx, ierr)
     use petscsnes
@@ -287,4 +287,4 @@ subroutine MyLineSearch(linesearch, lctx, ierr)
     PetscCall(VecNorm(x, NORM_2, xnorm, ierr))
     PetscCall(VecNorm(y, NORM_2, ynorm, ierr))
     PetscCall(SNESLineSearchSetNorms(linesearch, xnorm, gnorm, ynorm, ierr))
-end
+end subroutine MyLineSearch
