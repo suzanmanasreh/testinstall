@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# salloc a node before you run this cause the pets config uses srun
+# salloc a node before you run this cause the petsc config uses srun
 
 rm -fr packages
 mkdir packages
@@ -16,4 +16,7 @@ pip3 install --user configure
 # pip3 install --upgrade configure
 
 cp ../petsc_configure.py ./petsc-3.19.6
-python ./petsc-3.19.6/petsc_configure.py --mpich-only
+# see configure options before you configure
+cd petsc-3.19.6
+python petsc_configure.py --mpich-only --dryrun
+python petsc_configure.py --mpich-only

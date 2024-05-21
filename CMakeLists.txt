@@ -49,9 +49,9 @@ endif (FORTRAN_COMPILER)
 
 #  tells CMake to build the application ex1 from the source file ex1.c
 #  this must appear AFTER the compilers are set
-project(ex5f)
-add_executable(ex5f ex5f.F90)
+project(ex19)
+add_executable(ex19 ex19.F90)
 
 find_package(PkgConfig REQUIRED)
 pkg_search_module(PETSC REQUIRED IMPORTED_TARGET PETSc)
-target_link_libraries(ex5f PkgConfig::PETSC)
+target_link_libraries(ex19 PkgConfig::PETSC)
