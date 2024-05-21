@@ -1,0 +1,896 @@
+smanasreh6@atl1-1-02-020-32-1:~/lib/build$ make > out2>&1
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:50:132:
+
+   50 |     PetscCallA(PetscInitialize(ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:51:132:
+
+   51 |     PetscCallA(PetscLogNestedBegin(ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:53:132:
+
+   53 |     PetscCallA(PetscLogSetThreshold(threshold, oldthreshold, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:53:132:
+
+   53 |     PetscCallA(PetscLogSetThreshold(threshold, oldthreshold, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:53:111:
+
+   53 |     PetscCallA(PetscLogSetThreshold(threshold, oldthreshold, ierr))
+      |                                                                                                               1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:54:132:
+
+   54 |     PetscCallMPIA(MPI_Comm_size(PETSC_COMM_WORLD, size, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:54:132:
+
+   54 |     PetscCallMPIA(MPI_Comm_size(PETSC_COMM_WORLD, size, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:54:105:
+
+   54 |     PetscCallMPIA(MPI_Comm_size(PETSC_COMM_WORLD, size, ierr))
+      |                                                                                                         1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:55:132:
+
+   55 |     PetscCallMPIA(MPI_Comm_rank(PETSC_COMM_WORLD, rank, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:55:132:
+
+   55 |     PetscCallMPIA(MPI_Comm_rank(PETSC_COMM_WORLD, rank, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:55:105:
+
+   55 |     PetscCallMPIA(MPI_Comm_rank(PETSC_COMM_WORLD, rank, ierr))
+      |                                                                                                         1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:64:132:
+
+   64 |     PetscCallA(SNESCreate(PETSC_COMM_WORLD, snes, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:64:132:
+
+   64 |     PetscCallA(SNESCreate(PETSC_COMM_WORLD, snes, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:64:100:
+
+   64 |     PetscCallA(SNESCreate(PETSC_COMM_WORLD, snes, ierr))
+      |                                                                                                    1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:72:132:
+
+   72 |     PetscCallA(VecCreateSeq(PETSC_COMM_SELF, i2, x, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:72:132:
+
+   72 |     PetscCallA(VecCreateSeq(PETSC_COMM_SELF, i2, x, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:72:102:
+
+   72 |     PetscCallA(VecCreateSeq(PETSC_COMM_SELF, i2, x, ierr))
+      |                                                                                                      1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:73:132:
+
+   73 |     PetscCallA(VecDuplicate(x, r, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:77:132:
+
+   77 |     PetscCallA(MatCreate(PETSC_COMM_SELF, J, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:77:132:
+
+   77 |     PetscCallA(MatCreate(PETSC_COMM_SELF, J, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:77:95:
+
+   77 |     PetscCallA(MatCreate(PETSC_COMM_SELF, J, ierr))
+      |                                                                                               1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:78:132:
+
+   78 |     PetscCallA(MatSetSizes(J, PETSC_DECIDE, PETSC_DECIDE, i2, i2, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:78:132:
+
+   78 |     PetscCallA(MatSetSizes(J, PETSC_DECIDE, PETSC_DECIDE, i2, i2, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:78:116:
+
+   78 |     PetscCallA(MatSetSizes(J, PETSC_DECIDE, PETSC_DECIDE, i2, i2, ierr))
+      |                                                                                                                    1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:79:132:
+
+   79 |     PetscCallA(MatSetFromOptions(J, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:79:132:
+
+   79 |     PetscCallA(MatSetFromOptions(J, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:79:132:
+
+   79 |     PetscCallA(MatSetFromOptions(J, ierr))
+      |                                                                                                                                    1
+Error: Syntax error in argument list at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:80:132:
+
+   80 |     PetscCallA(MatSetUp(J, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:84:132:
+
+   84 |     PetscCallA(SNESSetFunction(snes, r, FormFunction, 0, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:84:132:
+
+   84 |     PetscCallA(SNESSetFunction(snes, r, FormFunction, 0, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:84:107:
+
+   84 |     PetscCallA(SNESSetFunction(snes, r, FormFunction, 0, ierr))
+      |                                                                                                           1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:88:132:
+
+   88 |     PetscCallA(SNESSetJacobian(snes, J, J, FormJacobian, 0, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:88:132:
+
+   88 |     PetscCallA(SNESSetJacobian(snes, J, J, FormJacobian, 0, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:88:110:
+
+   88 |     PetscCallA(SNESSetJacobian(snes, J, J, FormJacobian, 0, ierr))
+      |                                                                                                              1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:98:132:
+
+   98 |     PetscCallA(SNESGetKSP(snes, ksp, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:98:132:
+
+   98 |     PetscCallA(SNESGetKSP(snes, ksp, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:98:87:
+
+   98 |     PetscCallA(SNESGetKSP(snes, ksp, ierr))
+      |                                                                                       1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:99:132:
+
+   99 |     PetscCallA(KSPGetPC(ksp, pc, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:100:132:
+
+  100 |     PetscCallA(PCSetType(pc, PCNONE, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:100:132:
+
+  100 |     PetscCallA(PCSetType(pc, PCNONE, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:100:88:
+
+  100 |     PetscCallA(PCSetType(pc, PCNONE, ierr))
+      |                                                                                        1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:102:132:
+
+  102 |     PetscCallA(KSPSetTolerances(ksp, tol, PETSC_DEFAULT_REAL, PETSC_DEFAULT_REAL, i20, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:102:132:
+
+  102 |     PetscCallA(KSPSetTolerances(ksp, tol, PETSC_DEFAULT_REAL, PETSC_DEFAULT_REAL, i20, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:102:132:
+
+  102 |     PetscCallA(KSPSetTolerances(ksp, tol, PETSC_DEFAULT_REAL, PETSC_DEFAULT_REAL, i20, ierr))
+      |                                                                                                                                    1
+Error: Syntax error in argument list at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:110:132:
+
+  110 |     PetscCallA(SNESSetFromOptions(snes, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:110:132:
+
+  110 |     PetscCallA(SNESSetFromOptions(snes, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:110:91:
+
+  110 |     PetscCallA(SNESSetFromOptions(snes, ierr))
+      |                                                                                           1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:112:132:
+
+  112 |     PetscCallA(PetscOptionsHasName(PETSC_NULL_OPTIONS, PETSC_NULL_CHARACTER, '-setls', setls, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:115:132:
+
+  115 |         PetscCallA(SNESGetLineSearch(snes, linesearch, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:115:132:
+
+  115 |         PetscCallA(SNESGetLineSearch(snes, linesearch, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:115:106:
+
+  115 |         PetscCallA(SNESGetLineSearch(snes, linesearch, ierr))
+      |                                                                                                          1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:116:132:
+
+  116 |         PetscCallA(SNESLineSearchSetType(linesearch, 'shell', ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:116:132:
+
+  116 |         PetscCallA(SNESLineSearchSetType(linesearch, 'shell', ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:116:113:
+
+  116 |         PetscCallA(SNESLineSearchSetType(linesearch, 'shell', ierr))
+      |                                                                                                                 1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:117:132:
+
+  117 |         PetscCallA(SNESLineSearchShellSetApply(linesearch, MyLineSearch, 0, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:117:132:
+
+  117 |         PetscCallA(SNESLineSearchShellSetApply(linesearch, MyLineSearch, 0, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:117:127:
+
+  117 |         PetscCallA(SNESLineSearchShellSetApply(linesearch, MyLineSearch, 0, ierr))
+      |                                                                                                                               1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:130:132:
+
+  130 |     PetscCallA(VecSet(x, pfive, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:131:132:
+
+  131 |     PetscCallA(SNESSolve(snes, PETSC_NULL_VEC, x, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:131:132:
+
+  131 |     PetscCallA(SNESSolve(snes, PETSC_NULL_VEC, x, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:131:101:
+
+  131 |     PetscCallA(SNESSolve(snes, PETSC_NULL_VEC, x, ierr))
+      |                                                                                                     1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:134:132:
+
+  134 |     PetscCallA(SNESConvergedReasonView(snes, PETSC_VIEWER_STDOUT_WORLD, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:134:132:
+
+  134 |     PetscCallA(SNESConvergedReasonView(snes, PETSC_VIEWER_STDOUT_WORLD, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:134:123:
+
+  134 |     PetscCallA(SNESConvergedReasonView(snes, PETSC_VIEWER_STDOUT_WORLD, ierr))
+      |                                                                                                                           1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:136:132:
+
+  136 |     PetscCallA(SNESGetIterationNumber(snes, its, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:136:132:
+
+  136 |     PetscCallA(SNESGetIterationNumber(snes, its, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:136:100:
+
+  136 |     PetscCallA(SNESGetIterationNumber(snes, its, ierr))
+      |                                                                                                    1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:147:132:
+
+  147 |     PetscCallA(VecDestroy(x, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:147:132:
+
+  147 |     PetscCallA(VecDestroy(x, ierr))
+      |                                                                                                                                    1
+Error: Syntax error in CALL statement at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:148:132:
+
+  148 |     PetscCallA(VecDestroy(r, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:148:132:
+
+  148 |     PetscCallA(VecDestroy(r, ierr))
+      |                                                                                                                                    1
+Error: Syntax error in CALL statement at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:149:132:
+
+  149 |     PetscCallA(MatDestroy(J, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:149:132:
+
+  149 |     PetscCallA(MatDestroy(J, ierr))
+      |                                                                                                                                    1
+Error: Syntax error in CALL statement at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:150:132:
+
+  150 |     PetscCallA(SNESDestroy(snes, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:152:132:
+
+  152 |     PetscCallA(PetscViewerASCIIOpen(PETSC_COMM_WORLD, 'filename.xml', viewer, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:152:132:
+
+  152 |     PetscCallA(PetscViewerASCIIOpen(PETSC_COMM_WORLD, 'filename.xml', viewer, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:152:129:
+
+  152 |     PetscCallA(PetscViewerASCIIOpen(PETSC_COMM_WORLD, 'filename.xml', viewer, ierr))
+      |                                                                                                                                 1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:153:132:
+
+  153 |     PetscCallA(PetscViewerPushFormat(viewer, PETSC_VIEWER_ASCII_XML, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:153:132:
+
+  153 |     PetscCallA(PetscViewerPushFormat(viewer, PETSC_VIEWER_ASCII_XML, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:153:120:
+
+  153 |     PetscCallA(PetscViewerPushFormat(viewer, PETSC_VIEWER_ASCII_XML, ierr))
+      |                                                                                                                        1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:154:132:
+
+  154 |     PetscCallA(PetscLogView(viewer, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:154:132:
+
+  154 |     PetscCallA(PetscLogView(viewer, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:154:87:
+
+  154 |     PetscCallA(PetscLogView(viewer, ierr))
+      |                                                                                       1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:155:132:
+
+  155 |     PetscCallA(PetscViewerDestroy(viewer, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:155:132:
+
+  155 |     PetscCallA(PetscViewerDestroy(viewer, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:155:93:
+
+  155 |     PetscCallA(PetscViewerDestroy(viewer, ierr))
+      |                                                                                             1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:157:132:
+
+  157 |     PetscCallA(PetscFinalize(ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:157:132:
+
+  157 |     PetscCallA(PetscFinalize(ierr))
+      |                                                                                                                                    1
+Error: Syntax error in CALL statement at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:158:3:
+
+  158 | end
+      |   1
+Error: END IF statement expected at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:173:17:
+
+  173 |     use petscsnes
+      |                 1
+Error: Unexpected USE statement at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:174:17:
+
+  174 |     implicit none
+      |                 1
+Error: Duplicate IMPLICIT NONE statement at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:176:20:
+
+  176 |     SNES snes
+      |                    1
+Error: Symbol 'snes' at (1) already has basic type of DERIVED
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:177:16:
+
+  177 |     Vec x, f
+      |                1
+Error: Symbol 'x' at (1) already has basic type of DERIVED
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:178:43:
+
+  178 |     PetscErrorCode ierr
+      |                                           1
+Error: Symbol 'ierr' at (1) already has basic type of INTEGER
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:179:20:
+
+  179 |     integer dummy(*)
+      |                    1
+Error: Unexpected data declaration statement at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:182:66:
+
+  182 |     PetscScalar, pointer :: lx_v(:), lf_v(:)
+      |                                                                  1
+Error: Unexpected data declaration statement at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:189:132:
+
+  189 |     PetscCall(VecGetArrayReadF90(x, lx_v, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:189:132:
+
+  189 |     PetscCall(VecGetArrayReadF90(x, lx_v, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:189:94:
+
+  189 |     PetscCall(VecGetArrayReadF90(x, lx_v, ierr))
+      |                                                                                              1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:190:132:
+
+  190 |     PetscCall(VecGetArrayF90(f, lf_v, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:190:132:
+
+  190 |     PetscCall(VecGetArrayF90(f, lf_v, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:190:90:
+
+  190 |     PetscCall(VecGetArrayF90(f, lf_v, ierr))
+      |                                                                                          1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:199:132:
+
+  199 |     PetscCall(VecRestoreArrayReadF90(x, lx_v, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:199:132:
+
+  199 |     PetscCall(VecRestoreArrayReadF90(x, lx_v, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:199:98:
+
+  199 |     PetscCall(VecRestoreArrayReadF90(x, lx_v, ierr))
+      |                                                                                                  1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:200:132:
+
+  200 |     PetscCall(VecRestoreArrayF90(f, lf_v, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:200:132:
+
+  200 |     PetscCall(VecRestoreArrayF90(f, lf_v, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:200:94:
+
+  200 |     PetscCall(VecRestoreArrayF90(f, lf_v, ierr))
+      |                                                                                              1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:202:3:
+
+  202 | end
+      |   1
+Error: END IF statement expected at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:218:17:
+
+  218 |     use petscsnes
+      |                 1
+Error: Unexpected USE statement at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:219:17:
+
+  219 |     implicit none
+      |                 1
+Error: Duplicate IMPLICIT NONE statement at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:221:20:
+
+  221 |     SNES snes
+      |                    1
+Error: Symbol 'snes' at (1) already has basic type of DERIVED
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:222:16:
+
+  222 |     Vec X
+      |                1
+Error: Symbol 'x' at (1) already has basic type of DERIVED
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:223:21:
+
+  223 |     Mat jac, B
+      |                     1
+Error: Unexpected data declaration statement at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:224:42:
+
+  224 |     PetscScalar A(4)
+      |                                          1
+Error: Unexpected data declaration statement at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:225:43:
+
+  225 |     PetscErrorCode ierr
+      |                                           1
+Error: Symbol 'ierr' at (1) already has basic type of INTEGER
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:226:49:
+
+  226 |     PetscInt idx(2), i2
+      |                                                 1
+Error: Symbol 'i2' at (1) already has basic type of INTEGER
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:227:20:
+
+  227 |     integer dummy(*)
+      |                    1
+Error: Unexpected data declaration statement at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:231:57:
+
+  231 |     PetscScalar, pointer :: lx_v(:)
+      |                                                         1
+Error: Unexpected data declaration statement at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:236:132:
+
+  236 |     PetscCall(VecGetArrayReadF90(x, lx_v, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:236:132:
+
+  236 |     PetscCall(VecGetArrayReadF90(x, lx_v, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:236:94:
+
+  236 |     PetscCall(VecGetArrayReadF90(x, lx_v, ierr))
+      |                                                                                              1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:250:132:
+
+  250 |     PetscCall(MatSetValues(B, i2, idx, i2, idx, A, INSERT_VALUES, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:250:132:
+
+  250 |     PetscCall(MatSetValues(B, i2, idx, i2, idx, A, INSERT_VALUES, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:250:118:
+
+  250 |     PetscCall(MatSetValues(B, i2, idx, i2, idx, A, INSERT_VALUES, ierr))
+      |                                                                                                                      1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:254:132:
+
+  254 |     PetscCall(VecRestoreArrayReadF90(x, lx_v, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:254:132:
+
+  254 |     PetscCall(VecRestoreArrayReadF90(x, lx_v, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:254:98:
+
+  254 |     PetscCall(VecRestoreArrayReadF90(x, lx_v, ierr))
+      |                                                                                                  1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:258:132:
+
+  258 |     PetscCall(MatAssemblyBegin(B, MAT_FINAL_ASSEMBLY, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:258:132:
+
+  258 |     PetscCall(MatAssemblyBegin(B, MAT_FINAL_ASSEMBLY, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:258:106:
+
+  258 |     PetscCall(MatAssemblyBegin(B, MAT_FINAL_ASSEMBLY, ierr))
+      |                                                                                                          1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:259:132:
+
+  259 |     PetscCall(MatAssemblyEnd(B, MAT_FINAL_ASSEMBLY, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:259:132:
+
+  259 |     PetscCall(MatAssemblyEnd(B, MAT_FINAL_ASSEMBLY, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:259:104:
+
+  259 |     PetscCall(MatAssemblyEnd(B, MAT_FINAL_ASSEMBLY, ierr))
+      |                                                                                                        1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:261:132:
+
+  261 |         PetscCall(MatAssemblyBegin(jac, MAT_FINAL_ASSEMBLY, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:261:132:
+
+  261 |         PetscCall(MatAssemblyBegin(jac, MAT_FINAL_ASSEMBLY, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:261:112:
+
+  261 |         PetscCall(MatAssemblyBegin(jac, MAT_FINAL_ASSEMBLY, ierr))
+      |                                                                                                                1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:262:132:
+
+  262 |         PetscCall(MatAssemblyEnd(jac, MAT_FINAL_ASSEMBLY, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:262:132:
+
+  262 |         PetscCall(MatAssemblyEnd(jac, MAT_FINAL_ASSEMBLY, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:262:110:
+
+  262 |         PetscCall(MatAssemblyEnd(jac, MAT_FINAL_ASSEMBLY, ierr))
+      |                                                                                                              1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:265:3:
+
+  265 | end
+      |   1
+Error: END IF statement expected at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:268:17:
+
+  268 |     use petscsnes
+      |                 1
+Error: Unexpected USE statement at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:269:17:
+
+  269 |     implicit none
+      |                 1
+Error: Duplicate IMPLICIT NONE statement at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:271:50:
+
+  271 |     SNESLineSearch linesearch
+      |                                                  1
+Error: Symbol 'linesearch' at (1) already has basic type of INTEGER
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:272:20:
+
+  272 |     SNES snes
+      |                    1
+Error: Symbol 'snes' at (1) already has basic type of DERIVED
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:273:16:
+
+  273 |     integer lctx
+      |                1
+Error: Unexpected data declaration statement at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:274:16:
+
+  274 |     Vec x, f, g, y, w
+      |                1
+Error: Symbol 'x' at (1) already has basic type of DERIVED
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:275:57:
+
+  275 |     PetscReal ynorm, gnorm, xnorm
+      |                                                         1
+Error: Unexpected data declaration statement at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:276:43:
+
+  276 |     PetscErrorCode ierr
+      |                                           1
+Error: Symbol 'ierr' at (1) already has basic type of INTEGER
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:278:42:
+
+  278 |     PetscScalar mone
+      |                                          1
+Error: Unexpected data declaration statement at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:281:132:
+
+  281 |     PetscCall(SNESLineSearchGetSNES(linesearch, snes, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:281:132:
+
+  281 |     PetscCall(SNESLineSearchGetSNES(linesearch, snes, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:281:106:
+
+  281 |     PetscCall(SNESLineSearchGetSNES(linesearch, snes, ierr))
+      |                                                                                                          1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:282:132:
+
+  282 |     PetscCall(SNESLineSearchGetVecs(linesearch, x, f, y, w, g, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:282:132:
+
+  282 |     PetscCall(SNESLineSearchGetVecs(linesearch, x, f, y, w, g, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:282:115:
+
+  282 |     PetscCall(SNESLineSearchGetVecs(linesearch, x, f, y, w, g, ierr))
+      |                                                                                                                   1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:283:132:
+
+  283 |     PetscCall(VecNorm(y, NORM_2, ynorm, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:283:132:
+
+  283 |     PetscCall(VecNorm(y, NORM_2, ynorm, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:283:92:
+
+  283 |     PetscCall(VecNorm(y, NORM_2, ynorm, ierr))
+      |                                                                                            1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:284:132:
+
+  284 |     PetscCall(VecAXPY(x, mone, y, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:284:132:
+
+  284 |     PetscCall(VecAXPY(x, mone, y, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:284:132:
+
+  284 |     PetscCall(VecAXPY(x, mone, y, ierr))
+      |                                                                                                                                    1
+Error: Syntax error in argument list at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:285:132:
+
+  285 |     PetscCall(SNESComputeFunction(snes, x, f, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:285:132:
+
+  285 |     PetscCall(SNESComputeFunction(snes, x, f, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:285:98:
+
+  285 |     PetscCall(SNESComputeFunction(snes, x, f, ierr))
+      |                                                                                                  1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:286:132:
+
+  286 |     PetscCall(VecNorm(f, NORM_2, gnorm, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:286:132:
+
+  286 |     PetscCall(VecNorm(f, NORM_2, gnorm, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:286:92:
+
+  286 |     PetscCall(VecNorm(f, NORM_2, gnorm, ierr))
+      |                                                                                            1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:287:132:
+
+  287 |     PetscCall(VecNorm(x, NORM_2, xnorm, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:287:132:
+
+  287 |     PetscCall(VecNorm(x, NORM_2, xnorm, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:287:92:
+
+  287 |     PetscCall(VecNorm(x, NORM_2, xnorm, ierr))
+      |                                                                                            1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:288:132:
+
+  288 |     PetscCall(VecNorm(y, NORM_2, ynorm, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:288:132:
+
+  288 |     PetscCall(VecNorm(y, NORM_2, ynorm, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:288:92:
+
+  288 |     PetscCall(VecNorm(y, NORM_2, ynorm, ierr))
+      |                                                                                            1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:289:132:
+
+  289 |     PetscCall(SNESLineSearchSetNorms(linesearch, xnorm, gnorm, ynorm, ierr))
+      |                                                                                                                                    1
+Error: Line truncated at (1) [-Werror=line-truncation]
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:289:132:
+
+  289 |     PetscCall(SNESLineSearchSetNorms(linesearch, xnorm, gnorm, ynorm, ierr))
+      |                                                                                                                                    1
+Error: Missing ')' in statement at or before (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:289:122:
+
+  289 |     PetscCall(SNESLineSearchSetNorms(linesearch, xnorm, gnorm, ynorm, ierr))
+      |                                                                                                                          1
+Error: Unterminated character constant beginning at (1)
+/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90:290:3:
+
+  290 | end
+      |   1
+Error: END IF statement expected at (1)
+f951: Error: Unexpected end of file in '/storage/home/hcoda1/4/smanasreh6/lib/ex1f.F90'
+f951: some warnings being treated as errors
+make[2]: *** [CMakeFiles/ex1f.dir/ex1f.F90.o] Error 1
+make[1]: *** [CMakeFiles/ex1f.dir/all] Error 2
+make: *** [all] Error 2
