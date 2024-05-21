@@ -39,9 +39,11 @@ cmake_print_variables(FORTRAN_COMPILER)
 
 if (FORTRAN_COMPILER)
   message(${FORTRAN_COMPILER})
+  message("123434324")
   SET(CMAKE_Fortran_COMPILER ${FORTRAN_COMPILER})
   enable_language(Fortran)
   # set(CMAKE_Fortran_FLAGS "${CMAKE_Fortran_FLAGS} -I${PETSC_DIR}/include -I${PETSC_DIR}/${PETSC_ARCH}/include")
+  add_compile_options(-ffree-form -cpp)
 
   # SET(CMAKE_Fortran_LINK_EXECUTABLE "${CMAKE_Fortran_LINK_EXECUTABLE} -ldl")
 endif (FORTRAN_COMPILER)
