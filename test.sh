@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ml cmake/3.23.1-yuuito
+ml cmake/3.23.1-327dbl
 
 rm -fr build
 mkdir build

@@ -91,6 +91,4 @@ program main
             PetscCallA(VecDestroy(x, ierr))
             PetscCallA(VecDestroy(y, ierr))
             PetscCallA(PetscFinalize(ierr))
-        end do
-    end do
-end program main
+end

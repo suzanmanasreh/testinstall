@@ -40,10 +40,8 @@ cmake_print_variables(FORTRAN_COMPILER)
 
 if (FORTRAN_COMPILER)
   message(${FORTRAN_COMPILER})
-  message("123434324")
   SET(CMAKE_Fortran_COMPILER ${FORTRAN_COMPILER})
   # set(CMAKE_Fortran_FLAGS "${CMAKE_Fortran_FLAGS} -I${PETSC_DIR}/include -I${PETSC_DIR}/${PETSC_ARCH}/include")
-  # don't have to specify O3
   add_compile_options(-ffree-line-length-none -fallow-argument-mismatch -freal-4-real-8 -O3)
   add_link_options(-ldl -lstdc++ -Wl,--copy-dt-needed-entries)
   enable_language(Fortran C CXX)
@@ -51,25 +49,65 @@ if (FORTRAN_COMPILER)
   # SET(CMAKE_Fortran_LINK_EXECUTABLE "${CMAKE_Fortran_LINK_EXECUTABLE} -ldl")
 endif (FORTRAN_COMPILER)
 
+if(NOT DEFINED ENV{MKLROOT})
+  message(FATAL_ERROR "MKL not detected via MKLROOT environment variable")
+endif()
+
+
+# find_file(src
+# NAMES makefile
+# HINTS $ENV{MKLROOT}
+# PATH_SUFFIXES interfaces/lapack95
+# NO_DEFAULT_PATH
+# REQUIRED
+# )
+
+
 #  tells CMake to build the application ex1 from the source file ex1.c
 #  this must appear AFTER the compilers are set
-project(ex1f)
-add_executable(ex1f ex4f.F90)
+project(myexe)
+add_executable(myexe exl95.F90)
 
 find_package(PkgConfig REQUIRED)
 find_package(LAPACK REQUIRED)
-# find_package(LAPACK95 REQUIRED)
+
 pkg_search_module(PETSC REQUIRED IMPORTED_TARGET PETSc)
 
-target_link_libraries(ex1f LAPACK::LAPACK)
+# target_link_libraries(myexe LAPACK::LAPACK)
 
-target_link_libraries(ex1f PkgConfig::PETSC)
+target_link_libraries(myexe LAPACK::LAPACK PkgConfig::PETSC)
+
 if (PETSC_FOUND)
   message("PETSc found")
 endif(PETSC_FOUND)
 if (LAPACK_FOUND)
-  message("lapack found")
+  message(STATUS "LAPACK libraries: ${LAPACK_LIBRARIES}")
 endif(LAPACK_FOUND)
 
-# target_link_options(ex1f PRIVATE LAPACK::LAPACK)
-# target_link_libraries(ex1f PkgConfig::PETSC ${CMAKE_DL_LIBS})
+set(BLA_F95 ON)
+
+cmake_path(CONVERT "$ENV{MKLROOT}" TO_CMAKE_PATH_LIST MKLROOT NORMALIZE)
+message(STATUS "MKLROOT: ${MKLROOT}")
+
+set(FC $ENV{FC})
+if(FC)
+  message(STATUS "FC: ${FC}")
+  execute_process(COMMAND make libintel64 INSTALL_DIR=${CMAKE_CURRENT_BINARY_DIR} interface=lp64 FC=${FC}
+    WORKING_DIRECTORY $ENV{MKLROOT}/interfaces/lapack95)
+endif(FC)
+
+set(LAPACK95_INCLUDE_DIRS $ENV{MKLROOT}/include/intel64/lp64)
+set(LAPACK95_LIBRARIES $ENV{MKLROOT}/lib/intel64_lin/libmkl_lapack95_lp64.a)
+    
+# list(INSERT LAPACK95_LIBRARIES 0 $ENV{MKLROOT}/lib/intel64_lin/libmkl_lapack95_lp64.a)
+
+message(STATUS "LAPACK95_INCLUDE_DIRS: ${LAPACK95_INCLUDE_DIRS}")
+message(STATUS "LAPACK95_LIBRARIES: ${LAPACK95_LIBRARIES}")
+# find_package(LAPACK95 REQUIRED)
+
+if(LAPACK95_FOUND)
+  message("LAPACK95 FOUND")
+endif(LAPACK95_FOUND)
+
+target_link_libraries(myexe ${LAPACK95_LIBRARIES})
+target_include_directories(myexe PRIVATE ${LAPACK95_INCLUDE_DIRS})
