@@ -20,7 +20,7 @@ export PETSC_DIR=<PETSC_DIR> PETSC_ARCH=<PETSC_ARCH>
 Checklist: 
 - [X] PETSc
 - [ ] ~~LAPACK95~~ why doesn't [this](https://github.com/steleman/fortran2018-examples/blob/b2c892a595d38aa2e317fb656754f7927df69246/array/CMakeLists.txt#L14) work
-- [ ] LAPACK
+- [X] LAPACK
 - [ ] Spherepack
 - [ ] FFTW
 - [ ] NetCDF
