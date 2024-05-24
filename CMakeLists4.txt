@@ -1,0 +1,83 @@
+#
+#  This is a sample CMakeLists.txt suitable for direct use with a new PETSc application or
+#  you can add fragments of material below to an existing applications CMakeLists.txt
+#
+#  Usage:  To build ex1 from ex1.c
+#    rm -fr build
+#    mkdir build
+#    cd build
+#    cmake ..
+#    make
+#    ./ex1
+#
+#  By default it gets both the compiler information and the library information from PETSc
+#
+include(CMakePrintHelpers)
+cmake_minimum_required(VERSION 3.1.0)
+
+project(myexe Fortran C CXX)
+
+enable_testing()
+
+# get_directory_property(hasParent PARENT_DIRECTORY)
+# if(NOT hasParent)
+#   include(../cmake/compilers.cmake)
+# endif()
+
+set(BLA_F95 ON)
+
+message(STATUS "CMAKE_CURRENT_BINARY_DIR: ${CMAKE_CURRENT_BINARY_DIR}")
+set(FC $ENV{FC})
+# if(USE_MKL)
+    # source mklvars.sh intel64 lp64
+    if(FC)
+        message(STATUS "FC: ${FC}")
+        execute_process(COMMAND make libintel64 INSTALL_DIR=${CMAKE_CURRENT_BINARY_DIR} interface=lp64 FC=${FC}
+            WORKING_DIRECTORY $ENV{MKLROOT}/interfaces/lapack95)
+        message("EXECUTED PROCESS")
+    endif(FC)
+# endif(USE_MKL)
+
+set(BLA_VENDOR Intel10_64lp)
+
+if(NOT DEFINED ENV{MKLROOT})
+  message(FATAL_ERROR "MKL not detected via MKLROOT environment variable")
+endif()
+
+# #  tells CMake to build the application ex1 from the source file ex1.c
+# #  this must appear AFTER the compilers are set
+# enable_language(Fortran C CXX)
+add_executable(myexe exl95.F90)
+
+set(BLA_F95 OFF)
+find_package(LAPACK REQUIRED)
+
+if(LAPACK_FOUND)
+    message("LAPACK FOUND")
+endif(LAPACK_FOUND)
+
+# cmake_path(CONVERT "$ENV{MKLROOT}" TO_CMAKE_PATH_LIST MKLROOT NORMALIZE)
+# message(STATUS "MKLROOT: ${MKLROOT}")
+
+# message(STATUS "CMAKE_CURRENT_BINARY_DIR: ${CMAKE_CURRENT_BINARY_DIR}")
+
+
+# set(LAPACK95_INCLUDE_DIRS $ENV{MKLROOT}/include/intel64/lp64)
+# # set(LAPACK95_LIBRARIES $ENV{MKLROOT}/lib/intel64_lin/libmkl_lapack95_lp64.a)
+    
+# # list(INSERT LAPACK95_LIBRARIES 0 $ENV{MKLROOT}/lib/intel64_lin/libmkl_lapack95_lp64.a)
+
+set(LAPACK95_INCLUDE_DIRS ${CMAKE_CURRENT_BINARY_DIR}/include/intel64/lp64)
+    
+list(INSERT LAPACK95_LIBRARIES 0 ${CMAKE_CURRENT_BINARY_DIR}/lib/intel64/libmkl_lapack95_lp64.a)
+
+message(STATUS "LAPACK95_INCLUDE_DIRS: ${LAPACK95_INCLUDE_DIRS}")
+message(STATUS "LAPACK95_LIBRARIES: ${LAPACK95_LIBRARIES}")
+# find_package(LAPACK95 REQUIRED)
+
+# if(LAPACK95_FOUND)
+#   message("LAPACK95 FOUND")
+# endif(LAPACK95_FOUND)
+
+target_link_libraries(myexe ${LAPACK95_LIBRARIES})
+target_include_directories(myexe PRIVATE ${LAPACK95_INCLUDE_DIRS})
