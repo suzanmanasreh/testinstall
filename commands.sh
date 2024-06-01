@@ -2,16 +2,15 @@
 
 # salloc a node before you run this cause the petsc config uses srun
 
-rm -fr packages
-mkdir packages
-
 cd packages
+rm -fr petsc-3.19.6
 
-wget https://ftp.mcs.anl.gov/pub/petsc/petsc-3.19.tar.gz
+
+# wget https://ftp.mcs.anl.gov/pub/petsc/petsc-3.19.tar.gz
 tar -xvf petsc-3.19.tar.gz
 
 # switch module loads based on cluster
-ml gcc mvapich2 mkl python/3.9.12-rkxvr6
+ml gcc mvapich2 python/3.9.12-rkxvr6
 
 pip3 install --user configure
 

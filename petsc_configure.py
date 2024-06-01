@@ -259,11 +259,16 @@ def initialize_arch_identifiers(args):
 def options_for_mpich_only(mpich_only_arch):
     """ Return a custom set of arguments to simply download and build MPICH """
 
-    MKL_DIR = os.getenv('MKLROOT')
+    PACKAGES_DIR = os.path.dirname(os.getcwd())
+    LAPACK_LIB = PACKAGES_DIR + "/lapack-3.12.0/liblapack.a"
+    BLAS_LIB = PACKAGES_DIR + "/lapack-3.12.0/librefblas.a"
+
+    print("PACKAGES_DIR: " + PACKAGES_DIR)
+    print("BLAS_LIB: " + BLAS_LIB)
+    print("LAPACK_LIB: " + LAPACK_LIB)
 
     options = []
     options.append('--with-cc=mpicc')
-    # removing --with-cxx=0 flag causes error during config
     options.append('--with-cxx=mpicxx')
     options.append('--with-fc=mpif90')
     options.append('--with-debugging=0')
@@ -271,7 +276,8 @@ def options_for_mpich_only(mpich_only_arch):
     options.append("--CXXOPTFLAGS=-g -O3 -march=native")
     # options.append("--CUDAOPTFLAGS=-O3")
     options.append("--FOPTFLAGS=-g -O3 -march=native")
-    options.append("--with-blaslapack-dir=" + MKL_DIR)
+    options.append("--with-blas-lib=" + BLAS_LIB)
+    options.append("--with-lapack-lib=" + LAPACK_LIB)
     options.append("--with-mpiexec=srun")
     # options.append("--with-shared=0")
     options.append("--with-shared-libraries=0")
